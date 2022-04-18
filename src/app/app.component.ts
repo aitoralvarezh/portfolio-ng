@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-ng';
+  class = ''
+
+  onClick() {
+    this.class = this.class === '' ? 'dark' : ''
+    console.log(this.class);
+  }
 }
