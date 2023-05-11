@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   class = ''
-  constructor() { }
-
+  inputOptions: any[]
+  constructor() {
+    this.inputOptions= [
+      {key: 'es'},
+      {key: 'en'}
+    ]
+  }
+  
   ngOnInit(): void {
   }
   onClick() {

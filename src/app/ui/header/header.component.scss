@@ -1,0 +1,10 @@
+@import '../../../assets/variables/colors.scss';
+
+.header {
+    background-color: $tile-blue;
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

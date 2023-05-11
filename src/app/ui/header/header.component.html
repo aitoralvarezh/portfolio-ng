@@ -1,11 +1,18 @@
-<div class="nav bg-yellow-500 dark:bg-slate-700 dark:text-gray-400 flex justify-between p-5 hover:grayscale">
-    <div class="">
-        <a routerLink="/">Aitor Álvarez Hermida</a>
-    </div>
-    <div class="">
-        <ul class="flex justify-around">
-            <li class="px-5"><a routerLink="contact">Contact</a></li>
-            <li class="px-5"><a routerLink="projects">Projects</a></li>
-        </ul>
+<div class="header">
+    <div data-aos-duration="3000" class="header_nav container">
+        <div class="header__web-logo row">
+            <a routerLink="/">{{ 'hello' | translate }}</a>
+        </div>
+        <div class="header__web-links row">
+            <ul class="flex justify-around col">
+                <li class="px-5"><a routerLink="contact">Contact</a></li>
+                <li class="px-5"><a routerLink="projects">Projects</a></li>
+                <li>
+                    <form action="">
+                        <app-dropdown [options]="inputOptions"></app-dropdown>
+                    </form>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

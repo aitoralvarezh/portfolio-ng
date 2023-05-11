@@ -1,0 +1,5 @@
+<form action="">
+    <select name="language" id="lang-select">
+        <option  *ngFor="let option of options" value="option.key">{{ option.key | translate }}</option>
+    </select>
+</form>
